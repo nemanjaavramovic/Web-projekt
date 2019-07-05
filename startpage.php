@@ -118,8 +118,28 @@
                         if ($conn->query($sql) === TRUE) {
                             //echo "Record updated successfully";
                         } else {
-                            //echo "Error updating record: " . $conn->error;
+                            echo "Error updating record: " . $conn->error;
                         }
+
+                        $sql = "SELECT * FROM narudzba WHERE id=$id";
+                        $result = $conn->query($sql);
+
+                        if ($result->num_rows > 0) {
+                            // output data of each row
+                            while($row = $result->fetch_assoc()) {
+                                //echo "<br> Poštovani - Name: ". $row["first_name"]. " " . $row["last_name"] . "<br>";
+                                $res="Poštovani ". $row["first_name"]. " " . $row["last_name"] . " vaša narudžba: '". $row["order_list"]. "' je potvrđena. Hvala vam na narudžbi!";
+                            }
+                        } else {
+                            echo "0 results";
+                        }
+
+                        $idres="Potvrdjene_narudzbe/$id.txt";
+
+                        
+                        $file = fopen("$idres","w");
+                        fwrite($file,"$res");
+                        fclose($file);
 
                         $conn->close();
                         echo "<script type='text/javascript'> document.location = 'startpage.php'; </script>";
@@ -139,8 +159,30 @@
                         if ($conn->query($sql) === TRUE) {
                             //echo "Record updated successfully";
                         } else {
-                            //echo "Error updating record: " . $conn->error;
+                            echo "Error updating record: " . $conn->error;
                         }
+
+                        $sql = "SELECT * FROM narudzba WHERE id=$id";
+                        $result = $conn->query($sql);
+
+                        if ($result->num_rows > 0) {
+                            // output data of each row
+                            while($row = $result->fetch_assoc()) {
+                                //echo "<br> Poštovani - Name: ". $row["first_name"]. " " . $row["last_name"] . "<br>";
+                                $res="Poštovani ". $row["first_name"]. " " . $row["last_name"] . " vaša narudžba: '". $row["order_list"]. "' je odbijena. Pokušajte ponovo izvršiti narudžbu kasnije. Hvala vam na razumijevanju!";
+                            }
+                        } else {
+                            echo "0 results";
+                        }
+
+                        $idres="Odbijene_narudzbe/$id.txt";
+
+                        
+                        $file = fopen("$idres","w");
+                        fwrite($file,"$res");
+                        fclose($file);
+
+
                         $conn->close();
                         echo "<script type='text/javascript'> document.location = 'startpage.php'; </script>";  
                         
