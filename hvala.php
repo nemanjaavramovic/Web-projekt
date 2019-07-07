@@ -54,11 +54,14 @@
     <link rel="stylesheet" href="styles.css">
 </head>
     <body>
-        <header class="container container-menu">
+        <header class="container-menu">
+            <div id= "logo-holder">
+                <a href="index.php"><img id="logo" alt="Logo" src="Images/logo.png" width="100px" height="100px"></a>
+            </div>
             <nav class="menu-nav food-nav">
                 <ul>
-                    <li><a href="">Naslovna</a></li>
-                    <li><a href="index.php">Jelovnik</a></li>
+                    <li><a href="index.php">Naslovna</a></li>
+                    <li><a href="jelovnik.php">Jelovnik</a></li>
                     <li><a href="narudzba.php">Naruči</a></li>
                     <li><a href="">Kontakt</a></li>
                     <li><a href="">O nama</a></li>

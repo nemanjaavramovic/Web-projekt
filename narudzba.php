@@ -13,40 +13,46 @@
     <script src="narudzba.js" async></script>
 </head>
 <body>
-    <header class="container container-menu">
+    <header class="container-menu">
+        <div id= "logo-holder">
+            <a href="index.php"><img id="logo" alt="Logo" src="Images/logo.png" width="100px" height="100px"></a>
+        </div>
         <nav class="menu-nav food-nav">
             <ul>
-                <li><a href="">Naslovna</a></li>
-                <li><a href="index.php">Jelovnik</a></li>
+                <li><a href="index.php">Naslovna</a></li>
+                <li><a href="jelovnik.php">Jelovnik</a></li>
                 <li><a id="highlightmenu" href="narudzba.php">Naruči</a></li>
                 <li><a href="">Kontakt</a></li>
                 <li><a href="">O nama</a></li>
             </ul>
         </nav>
     </header>
+    <br>
+    <br>
+    <br>
     <h2 class="section-header">NARUDŽBA</h2>
     
     <div class="form">
-        <h3 class="txt">Unesite vaše podatke</h3>
+        <h3 class="txt"><font color="white">Unesite vaše podatke</font></h3>
         <br>
         <br>
         <form method = "post" action="">
-            <label class="txt" for="fname">Ime</label>
+            <label class="txt" for="fname"><font color="white">Ime</font></label>
             <input type="text" id="fname" name="firstname" placeholder="Unesite vaše ime.." pattern=".{2,20}" required>
         
-            <label class="txt" for="lname">Prezime</label>
+            <label class="txt" for="lname"><font color="white">Prezime</font></label>
             <input type="text" id="lname" name="lastname" placeholder="Unesite vaše prezime.." pattern=".{2,20}" required>
         
-            <label class="txt" for="email">E-mail</label>
+            <label class="txt" for="email"><font color="white">E-mail</font></label>
             <input type="email" id="email" name="email" placeholder="Unesite vaš e-mail.." required>
 
-            <label class="txt" for="tel">Broj telefona (od 7 do 13 znamenki)</label>
+            <label class="txt" for="tel"><font color="white">Broj telefona (od 7 do 13 znamenki)</label>
             <input type="tel" id="tel" name="tel" placeholder="Unesite vaš broj telefona.." pattern="[0-9]{7,13}" required>
             
-            <label class="txt" for="address">Adresa</label>
+            <label class="txt" for="address"><font color="white">Adresa</label>
             <input type="text" id="address" name="address" placeholder="Unesite vašu adresu.." pattern=".{2,40}" required>
             
-            <label class="txt" for="city">Mjesto</label>
+            <label class="txt" for="city"><font color="white">Mjesto</label>
             <input type="text" id="city" name="city" placeholder="Unesite vaše mjesto.." pattern=".{2,20}" required>
 
             <input type="hidden" value="" id="option" name='option'/>
@@ -90,23 +96,40 @@
             ?>
             <br>
             <br>
-            <section class="container content-section">
+            <section class="content-section">
+                <div class="istnar">
+                    <h2 class="section-header">NARUDŽBA</h2>
                     <div class="cart-row">
-                        <span class="cart-item cart-header cart-column">JELO</span>
-                        <span class="cart-price cart-header cart-column">CIJENA</span>
-                        <span class="cart-quantity cart-header cart-column">KOLIČINA</span>
+                        <span class="cart-item cart-header cart-column"><font color="white">JELO</font></span>
+                        <span class="cart-price cart-header cart-column"><font color="white">CIJENA</font></span>
+                        <span class="cart-quantity cart-header cart-column"><font color="white">KOLIČINA</font></span>
                     </div>
                     <div class="cart-items">
                     </div>
                     <div class="cart-total">
-                        <strong class="cart-total-title">Ukupno</strong>
-                        <span class="cart-total-price">0kn</span>
+                        <strong class="cart-total-title"><font color="white">Ukupno</font></strong>
+                        <span id="ukupno" class="cart-total-price">0kn</span>
                     </div>
+                </div>
             </section>
             <br>
             <input class="btn btn-primary btn-purchase" type="submit" value="NARUČI" name="submit">
         </form>
+    </div>
+    <br>
+    <br>
+    <div class="page" id="footer">
+        <div class ="firstrow">
+            <div id="soclogos">
+                    <a href="https://www.facebook.com/"><img class="sl" alt="FB" src="Images/Facebook.png"></a>
+                    <a href="https://www.instagram.com/"><img class="sl" alt="IG" src="Images/Instagram.png"></a>
+                    <a href="https://twitter.com"><img class="sl" alt="TW" src="Images/Twitter.png"></a>
+                    <a href="https://www.youtube.com/"><img class="sl" alt="YT" src="Images/Youtube.png"></a>
+            </div>
         </div>
-    
+        <div class="secondrow">
+            <p><font color="white">©2019 Nemanja Avramović, Sva prava pridržana</font></p>
+        </div>
+    </div>
 </body>
 </html>

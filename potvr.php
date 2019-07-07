@@ -9,23 +9,33 @@
     <link rel="stylesheet" href="styles.css">
 </head>
     <body>
-        <header class="container container-menu">
-                <nav class="menu-nav food-nav">
+        <div>
+            <h4 class="section-header">Dobro došli Nemanja</h4>
+        </div>
+        <header class="container-menu">
+            <div id= "logo-holder">
+                <a href="index.php"><img id="logo" alt="Logo" src="Images/logo.png" width="100px" height="100px"></a>
+            </div>
+            <nav class="menu-nav food-nav">
                     <ul>
                         <li><a href="startpage.php">Nepotvrđene narudžbe</a></li>
                         <li><a id="highlightmenu" href="potvr.php">Potvrđene narudžbe</a></li>
                         <li><a href="odbij.php">Odbijene narudžbe</a></li>
                         <li><a href="svenarudzbe.php">Sve narudžbe</a></li>
+                        <li><a href="logout.php">Odjava</a></li>
                     </ul>
-                </nav>
+                    </nav>
         </header>
         <br>
         <br>
         <br>
         <br>
+        <br>
+        <br>
         <?php
-            echo "<center><table style='border: solid 1px black;'></center>";
-            echo "<tr><th>ID</th><th>Ime</th><th>Prezime</th><th>E-mail</th><th>Broj telefona</th><th>Ulica</th><th>Mjesto</th><th>Narudžba</th><th>Potvrda</th></tr>";
+            echo "<div style='overflow-x:auto;'>";
+            echo "<center><table class='content-table'></center>";
+            echo "<thead><tr><th>ID</th><th>Ime</th><th>Prezime</th><th>E-mail</th><th>Broj telefona</th><th>Ulica</th><th>Mjesto</th><th>Narudžba</th><th>Potvrda</th></tr></thead>";
 
             class TableRows extends RecursiveIteratorIterator { 
                 function __construct($it) { 
@@ -33,7 +43,7 @@
                 }
 
                 function current() {
-                    return "<td style='width:150px;border:1px solid black;'>" . parent::current(). "</td>";
+                    return "<td>" . parent::current(). "</td>";
                 }
 
                 function beginChildren() { 
@@ -67,6 +77,25 @@
             }
             $conn = null;
             echo "</table>";
+            echo "</div>";
         ?>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="page" id="footer">
+        <div class ="firstrow">
+            <div id="soclogos">
+                    <a href="https://www.facebook.com/"><img class="sl" alt="FB" src="Images/Facebook.png"></a>
+                    <a href="https://www.instagram.com/"><img class="sl" alt="IG" src="Images/Instagram.png"></a>
+                    <a href="https://twitter.com"><img class="sl" alt="TW" src="Images/Twitter.png"></a>
+                    <a href="https://www.youtube.com/"><img class="sl" alt="YT" src="Images/Youtube.png"></a>
+            </div>
+        </div>
+        <div class="secondrow">
+            <p><font color="white">©2019 Nemanja Avramović, Sva prava pridržana</font></p>
+        </div>
+    </div>
     </body>
 </html>

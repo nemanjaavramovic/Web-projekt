@@ -15,38 +15,32 @@
 </head>
     <body>
         <div>
-            <?php
-                if(isset($errMsg)){
-                    echo '<div>'.$errMsg.'</div>';
-                }
-            ?>
-            <div>
-                <h4 class="section-header">Dobro došli <?php echo $_SESSION['name']; ?></h4>
-            </div>
-            <div id="odjava">
-                <a  href="logout.php">Odjava</a>    
-            </div>
+            <h4 class="section-header">Dobro došli Nemanja</h4>
         </div>
-        <header class="container container-menu">
-                <nav class="menu-nav food-nav">
+        <header class="container-menu">
+            <div id= "logo-holder">
+                <a href="index.php"><img id="logo" alt="Logo" src="Images/logo.png" width="100px" height="100px"></a>
+            </div>
+            <nav class="menu-nav food-nav">
                     <ul>
                         <li><a id="highlightmenu" href="startpage.php">Nepotvrđene narudžbe</a></li>
                         <li><a href="potvr.php">Potvrđene narudžbe</a></li>
                         <li><a href="odbij.php">Odbijene narudžbe</a></li>
                         <li><a href="svenarudzbe.php">Sve narudžbe</a></li>
+                        <li><a href="logout.php">Odjava</a></li>
                     </ul>
-                </nav>
+                    </nav>
         </header>
-        
         <br>
         <br>
         <br>
         <br>
-        
+        <br>
+        <br>
         <?php
             echo "<div style='overflow-x:auto;'>";
-            echo "<center><table></center>";
-            echo "<tr><th>ID</th><th>Ime</th><th>Prezime</th><th>E-mail</th><th>Broj telefona</th><th>Ulica</th><th>Mjesto</th><th>Narudžba</th><th>Potvrda</th></tr>";
+            echo "<center><table class='content-table'></center>";
+            echo "<thead><tr><th>ID</th><th>Ime</th><th>Prezime</th><th>E-mail</th><th>Broj telefona</th><th>Ulica</th><th>Mjesto</th><th>Narudžba</th><th>Potvrda</th></tr></thead>";
             
 
             class TableRows extends RecursiveIteratorIterator { 
@@ -55,7 +49,7 @@
                 }
 
                 function current() {
-                    return "<td style='width:150px;border:1px solid black;'>" . parent::current(). "</td>";
+                    return "<td>" . parent::current(). "</td>";
                 }
 
                 function beginChildren() { 
@@ -94,7 +88,7 @@
         <br>
         <br>
         <form method = "post" action="">
-            <label class="txtx" for="idor"><center>Unesite ID narudžbe koju želite potvrditi ili odbiti:</center></label>
+            <label class="txtx" for="idor"><center><font color="white">Unesite ID narudžbe koju želite potvrditi ili odbiti:</font></center></label>
             <input type="number" id="idor" name="idor" pattern="[0-9]{1,6}" required>
             <?php
                 $servername = "localhost";
@@ -145,7 +139,7 @@
                         echo "<script type='text/javascript'> document.location = 'startpage.php'; </script>";
                     }
                     else{
-                        echo '<font color="FF0000">Korisnik s tim ID-om ne postoji u bazi ili mu je narudžba obrađena</font>';
+                        echo '<font color="E41624"><center><b>Korisnik s tim ID-om ne postoji u bazi ili mu je narudžba obrađena</b></center></font>';
                     }
                     
                 }
@@ -196,6 +190,22 @@
             <br>
             <input id="crveni" class="btn-confirmation" type="submit" value="ODBIJ" name="odbij">
         </form>
-
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="page" id="footer">
+        <div class ="firstrow">
+            <div id="soclogos">
+                    <a href="https://www.facebook.com/"><img class="sl" alt="FB" src="Images/Facebook.png"></a>
+                    <a href="https://www.instagram.com/"><img class="sl" alt="IG" src="Images/Instagram.png"></a>
+                    <a href="https://twitter.com"><img class="sl" alt="TW" src="Images/Twitter.png"></a>
+                    <a href="https://www.youtube.com/"><img class="sl" alt="YT" src="Images/Youtube.png"></a>
+            </div>
+        </div>
+        <div class="secondrow">
+            <p><font color="white">©2019 Nemanja Avramović, Sva prava pridržana</font></p>
+        </div>
+    </div>
     </body>
 </html>
