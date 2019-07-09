@@ -20,7 +20,7 @@
                 <li><a id="highlightmenu" href="index.php">Naslovna</a></li>
                 <li><a href="jelovnik.php">Jelovnik</a></li>
                 <li><a href="narudzba.php">Naruči</a></li>
-                <li><a href="">Kontakt</a></li>
+                <li><a href="kontakt.php">Kontakt</a></li>
                 <li><a href="">O nama</a></li>
             </ul>
         </nav>
@@ -30,7 +30,7 @@
                 <a id="highlightmenu" href="index.php">Naslovna</a>
                 <a href="jelovnik.php">Jelovnik</a>
                 <a href="narudzba.php">Naruči</a>
-                <a href="#">Kontakt</a>
+                <a href="kontakt.php">Kontakt</a>
                 <a href="#">O nama</a>
             </div>
         </div>
@@ -80,9 +80,34 @@
     <br>
     <br>
     <div class="page" id="istaknuto">
+        <br>
         <h1 id="welcometxt">Istaknuta jela</h1>
         <img id="baratto2" alt="Logo" src="Images/baratto2.png">
+        <div class="container2">
+        <div class="row2">
+            <div class="column2 column2-2">
+                <h2 class="ih">Pizza s piletinom</h2>
+                <img src="Images/PiletinaPizza.jpg" style="width: 200px;height:auto" alt="">
+            </div>
+            <div class="column2 column2-2">
+                <h2 class="ih">Svinjska rebarca</h2>
+                <img src="Images/SvinjskaRebarca.jpg" style="width: 200px;height:auto" alt="">
+            </div>
+            <div class="column2 column2-2">
+                <h2 class="ih">Zagrebački odrezak</h2>
+                <img src="Images/Zagrebacki.jpg" style="width: 200px;height:auto" alt="">
+            </div>
+            <div class="column2 column2-2">
+                <h2 class="ih">Slavonski sendvič</h2>
+                <img src="Images/Slavonski.jpg" style="width: 200px;height:auto" alt="">
+            </div>
+        </div>
     </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
     <div class="page" id="footer">
             <div class ="firstrow">
                 <div id="soclogos">

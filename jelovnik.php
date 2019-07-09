@@ -21,7 +21,7 @@
                 <li><a href="index.php">Naslovna</a></li>
                 <li><a id="highlightmenu"href="jelovnik.php">Jelovnik</a></li>
                 <li><a href="narudzba.php">Naruči</a></li>
-                <li><a href="">Kontakt</a></li>
+                <li><a href="kontakt.php">Kontakt</a></li>
                 <li><a href="">O nama</a></li>
             </ul>
         </nav>
@@ -31,7 +31,7 @@
                 <a href="index.php">Naslovna</a>
                 <a id="highlightmenu" href="jelovnik.php">Jelovnik</a>
                 <a href="narudzba.php">Naruči</a>
-                <a href="#">Kontakt</a>
+                <a href="kontakt.php">Kontakt</a>
                 <a href="#">O nama</a>
             </div>
         </div>
@@ -83,7 +83,7 @@
                 </div>
             </div>
             <div class="shop-item column-3">
-                <span class="shop-item-title">Pizza od piletine</span>
+                <span class="shop-item-title">Pizza s piletinom</span>
                 <img class="shop-item-image" src="Images/PiletinaPizza.jpg">
                 <div class="shop-item-details">
                     <span class="shop-item-price"><font color="white">45kn</font></span>

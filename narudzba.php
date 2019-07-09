@@ -23,7 +23,7 @@
                 <li><a href="index.php">Naslovna</a></li>
                 <li><a href="jelovnik.php">Jelovnik</a></li>
                 <li><a id="highlightmenu" href="narudzba.php">Naruči</a></li>
-                <li><a href="">Kontakt</a></li>
+                <li><a href="kontakt.php">Kontakt</a></li>
                 <li><a href="">O nama</a></li>
             </ul>
         </nav>
@@ -33,7 +33,7 @@
                 <a href="index.php">Naslovna</a>
                 <a href="jelovnik.php">Jelovnik</a>
                 <a id="highlightmenu" href="narudzba.php">Naruči</a>
-                <a href="#">Kontakt</a>
+                <a href="kontakt.php">Kontakt</a>
                 <a href="#">O nama</a>
             </div>
         </div>
@@ -71,12 +71,6 @@
             <?php
 
                 if(isset($_POST['submit'])
-                // && isset($_POST['firstname']) 
-                // && isset($_POST['lastname']) 
-                // && isset($_POST['email']) 
-                // && isset($_POST['tel'])
-                // && isset($_POST['address'])
-                // && isset($_POST['city'])
                 ) {
                     
                     $firstname=$_POST['firstname'];

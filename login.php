@@ -30,7 +30,7 @@
 						$_SESSION['password'] = $data['password'];
 						$_SESSION['secretpin'] = $data['secretpin'];
 
-						header('Location: startpage.php');
+						header('Location: pn.php');
 						exit;
 					}
 					else

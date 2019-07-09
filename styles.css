@@ -344,15 +344,95 @@ img{
 
 #istaknuto{
     background-color: rgb(228, 22, 36);
-    height: 50vh;
+    height: 90vh;
     margin-left: 0%;
     margin-right: 0%;
     margin-bottom: 7.6%;
 }
 
+
+
+* {
+    box-sizing: border-box
+}
+
+.container2 {
+    width: 100%;
+    max-width: 1260px;
+    padding: 0 12px;
+    margin: 0 auto;
+}
+
+.row2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 -12px;
+}
+
+.column2 {
+    flex: 1 1 25%;
+    padding: 20px 12px;
+    text-align: center;
+}
+
+
+.ih{
+    color: white;
+}
+
+
+
+@media screen and (max-width: 950px) {
+
+    .column2-2 {
+        flex: 0 0 50%;
+    }
+
+    #istaknuto{
+        height: 125vh;
+    }
+
+}
+
+
+
+@media screen and (max-width: 500px) {
+
+    .column2-2 {
+        flex: 0 0 100%;
+    }
+    
+    #istaknuto{
+        height: 210vh;
+    }
+
+}
+
+.adst{
+    display: block;
+    text-align: center;
+}
+.adst a{
+    font-size: 30px;
+    color: white;
+    padding: 20px;
+}
+.adst a:hover{
+    background-color: rgb(228, 22, 36);
+    border-radius: 20px;
+}
+
+
+
+
+
+
+
+
 #footer{
     background-color: rgb(228, 22, 36);
-    height: 19.6vh;
+    height: 20.8vh;
     margin: 0;
 }
 
@@ -645,7 +725,7 @@ a {
     height: auto;     
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 890px) {
 
     .column-3 {
         flex: 0 0 50%;
@@ -686,6 +766,59 @@ a {
     cursor: pointer;
 }
 
+
+.row3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 ;
+}
+
+.column3 {
+    flex: 1 1 100%;
+    padding: 0 12px;
+    text-align: left;
+}
+
+
+
+#knt{
+    margin: 8px auto;
+}
+
+
+#map{
+    text-align: center;
+}
+
+
+.inf{
+    width: 62%;
+    margin: 0 auto;
+    padding-bottom: 1px;
+    background-color: rgb(228, 22, 36);
+    border-radius: 20px;
+}
+
+iframe{
+    border-radius: 30px;
+}
+
+@media screen and (max-width: 836px) {
+
+    .inf{
+        width: 80%;
+        margin: 0 auto;
+        background-color: rgb(228, 22, 36);
+    }
+}
+
+@media screen and (min-width: 836px) {
+
+    .column-6 {
+        flex: 0 0 50%;
+    }
+}
 
 .btn-primary {
     color: white;
@@ -856,13 +989,24 @@ a {
 
 
 
+textarea{
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px auto;
+    display: block;
+    box-sizing: border-box;
+    border: 2px solid rgb(228, 22, 36);
+    border-radius: 15px;
+}
+
+
 input[type=text] {
     width: 40%;
     padding: 12px 20px;
     margin: 8px auto;
     display: block;
     border: 2px solid rgb(228, 22, 36);
-    border-radius: 4px;
+    border-radius: 15px;
     box-sizing: border-box;
   }
 
@@ -872,7 +1016,7 @@ input[type=text] {
     margin: 8px auto;
     display: block;
     border: 2px solid rgb(228, 22, 36);
-    border-radius: 4px;
+    border-radius: 15px;
     box-sizing: border-box;
   }
 
@@ -882,7 +1026,7 @@ input[type=text] {
     margin: 8px auto;
     display: block;
     border: 2px solid rgb(228, 22, 36);
-    border-radius: 4px;
+    border-radius: 15px;
     box-sizing: border-box;
   }
 
@@ -892,7 +1036,7 @@ input[type=text] {
     margin: 8px auto;
     display: block;
     border: 2px solid rgb(228, 22, 36);
-    border-radius: 4px;
+    border-radius: 15px;
     box-sizing: border-box;
   }
 
@@ -928,7 +1072,7 @@ input[type=text] {
     padding: 14px 20px;
     margin: auto;
     border: none;
-    border-radius: 4px;
+    border-radius: 15px;
     cursor: pointer;
   }
   
@@ -944,6 +1088,7 @@ input[type=text] {
   .txt{
       margin-left: 30%;
   }
+ 
 
   .txtx{
     text-align: center;
@@ -962,6 +1107,10 @@ table {
     input[type=text], input[type=tel], input[type=email] {
       width: 100%;
       margin-top: 0;
+    }
+    
+    textarea{
+        width: 100%;
     }
     .txt{
         margin-left: 0%;

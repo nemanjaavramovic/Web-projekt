@@ -1,22 +1,14 @@
-<script>
-    localStorage.removeItem('pizze')
-    localStorage.removeItem('quantity')
-    localStorage.removeItem('list')
-</script>
 <?php
     session_start();
     if(!isset($_SESSION['firstname'])){
-        header('Location: narudzba.php');
+        header('Location: kontakt.php');
         exit();
     }
 
     $firstname=$_SESSION['firstname'];
     $lastname=$_SESSION['lastname'];
     $email=$_SESSION['email'];
-    $tel=$_SESSION['tel'];
-    $address=$_SESSION['address'];
-    $city=$_SESSION['city'];
-    $orderlist=$_SESSION['orderlist'];
+    $message=$_SESSION['message'];
     //echo "Pozdrav $firstname $lastname $email $tel $address $city, narucili ste: $orderlist";
 
     $servername = "localhost";
@@ -34,8 +26,8 @@
 
 
 
-    $sql = "INSERT INTO narudzba (first_name, last_name, email, telephone_number, street, city, order_list)
-    VALUES ('$firstname', '$lastname', '$email', '$tel', '$address', '$city', '$orderlist')";
+    $sql = "INSERT INTO poruke (first_name, last_name, email, message)
+    VALUES ('$firstname', '$lastname', '$email', '$message')";
     
     if ($conn->query($sql) === TRUE) {
         //echo "New record created successfully";
@@ -47,14 +39,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Hvala na narudžbi</title>
+    <title>Poruka je poslana</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="styles.css">
     <script src="myScript2.js" async></script>
 </head>
-<body>
+    <body>
         <header class="container-menu">
             <div id= "logo-holder">
                 <a href="index.php"><img id="logo" alt="Logo" src="Images/logo.png" width="100px" height="100px"></a>
@@ -89,7 +81,7 @@
         <br>
         <br>
         <br>
-        <h2 class="section-header">Hvala vam na narudžbi!</h2>
+        <h2 class="section-header">Poruka je poslana.</h2>
         <br>
         <br>
         <br>
