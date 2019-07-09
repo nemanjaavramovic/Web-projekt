@@ -1,3 +1,98 @@
+#xbtn{
+    display: none;
+}
+
+#mnbtn{
+    display: none;
+}
+
+#sn{
+    display: none;
+}
+
+
+
+
+
+@media screen and (max-width: 800px) {
+
+    #mv{
+        display: none;
+    }
+
+    #xbtn{
+        display: inline;
+    }
+
+    #sn{
+        display: inline;
+    }
+
+    #mnbtn{
+        display: inline;
+        flex-grow: 1;
+        margin-left: 70%;
+        margin-top: 3%;
+        color: rgb(228, 22, 36);
+    }
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+        margin-right: 0%;
+        }
+
+    .overlay-content {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+        display: block;
+    }
+
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        margin-top: 50px;
+        text-decoration: none;
+        font-size: 36px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .sidenav a:hover {
+        color: rgb(228, 22, 36);
+    }
+
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+        margin-top: 0px;
+    }
+}
+
+
+
+
+
+
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
 
 .galleryContainer{
     width: 600px;
@@ -26,6 +121,7 @@
     overflow: hidden;
     background-color: gainsboro;
     position: relative;
+    border-radius: 30px;
 }
 .galleryContainer .slideShowContainer #playPause{
     width: 32px;
@@ -223,6 +319,7 @@ img{
     background-size: cover;
     background-repeat: no-repeat; 
     width: auto;
+    border-radius: 30px;
 }
 #startimage {
     display: block;
@@ -382,26 +479,26 @@ img{
     flex-grow: 1;
 }
 
-@media screen and (max-width: 750px) {
 
-    #logo{
-        
-        height: 80px;
-        width: auto;
+@media screen and (max-width: 1170px) {
+
+    #fm a{
+        font-size: 15px;
     }
+    
 }
 
-@media screen and (max-width: 660px) {
 
-    #logo{
-        
-        height: 60px;
-        width: auto;
-        margin-
+@media screen and (max-width: 990px) {
+
+    #fm a{
+        font-size: 10px;
     }
+    
 }
 
-@media screen and (max-width: 600px) {
+
+@media screen and (max-width: 800px) {
 
     #logo{
         
@@ -411,6 +508,7 @@ img{
     #logo-holder {
         padding: 15px 15px;
     }
+    
 }
 
 
@@ -538,7 +636,7 @@ a {
 
 .shop-item {
     flex: 1 1 33%;
-    padding: 0 12px;
+    padding: 15px 12px;
     text-align: center;
 }
 
@@ -547,7 +645,7 @@ a {
     height: auto;     
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 800px) {
 
     .column-3 {
         flex: 0 0 50%;
@@ -556,7 +654,7 @@ a {
 }
 
 
-@media screen and (max-width: 510px) {
+@media screen and (max-width: 520px) {
 
     .column-3 {
         flex: 0 0 100%;

@@ -11,13 +11,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="styles.css">
     <script src="narudzba.js" async></script>
+    <script src="myScript2.js" async></script>
 </head>
 <body>
     <header class="container-menu">
         <div id= "logo-holder">
             <a href="index.php"><img id="logo" alt="Logo" src="Images/logo.png" width="100px" height="100px"></a>
         </div>
-        <nav class="menu-nav food-nav">
+        <nav class="menu-nav food-nav" id="mv">
             <ul>
                 <li><a href="index.php">Naslovna</a></li>
                 <li><a href="jelovnik.php">Jelovnik</a></li>
@@ -26,6 +27,17 @@
                 <li><a href="">O nama</a></li>
             </ul>
         </nav>
+        <div id="mySidenav" class="sidenav">
+            <a id="xbtn" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content" id="sn">
+                <a href="index.php">Naslovna</a>
+                <a href="jelovnik.php">Jelovnik</a>
+                <a id="highlightmenu" href="narudzba.php">Naruči</a>
+                <a href="#">Kontakt</a>
+                <a href="#">O nama</a>
+            </div>
+        </div>
+        <span id="mnbtn" style="font-size:30px;cursor:pointer;float:right" onclick="openNav()">&#9776;</span>
     </header>
     <br>
     <br>

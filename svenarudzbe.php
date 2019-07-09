@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="styles.css">
+    <script src="myScript2.js" async></script>
 </head>
     <body>
         <div>
@@ -16,15 +17,26 @@
             <div id= "logo-holder">
                 <a href="index.php"><img id="logo" alt="Logo" src="Images/logo.png" width="100px" height="100px"></a>
             </div>
-            <nav class="menu-nav food-nav">
-                    <ul>
-                        <li><a href="startpage.php">Nepotvrđene narudžbe</a></li>
-                        <li><a href="potvr.php">Potvrđene narudžbe</a></li>
-                        <li><a href="odbij.php">Odbijene narudžbe</a></li>
-                        <li><a id="highlightmenu" href="svenarudzbe.php">Sve narudžbe</a></li>
-                        <li><a href="logout.php">Odjava</a></li>
-                    </ul>
-                    </nav>
+            <nav class="menu-nav food-nav" id="mv">
+                <ul id="fm">
+                    <li><a href="startpage.php">Nepotvrđene narudžbe</a></li>
+                    <li><a href="potvr.php">Potvrđene narudžbe</a></li>
+                    <li><a href="odbij.php">Odbijene narudžbe</a></li>
+                    <li><a id="highlightmenu" href="svenarudzbe.php">Sve narudžbe</a></li>
+                    <li><a href="logout.php">Odjava</a></li>
+                </ul>
+            </nav>
+            <div id="mySidenav" class="sidenav">
+                <a id="xbtn" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content" id="sn">
+                    <li><a href="startpage.php">Nepotvrđene narudžbe</a></li>
+                    <li><a href="potvr.php">Potvrđene narudžbe</a></li>
+                    <li><a href="odbij.php">Odbijene narudžbe</a></li>
+                    <li><a id="highlightmenu" href="svenarudzbe.php">Sve narudžbe</a></li>
+                    <li><a href="logout.php">Odjava</a></li>
+                </div>
+            </div>
+            <span id="mnbtn" style="font-size:30px;cursor:pointer;float:right" onclick="openNav()">&#9776;</span>
         </header>
         <br>
         <br>

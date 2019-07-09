@@ -3,7 +3,7 @@
 
 
 <head>
-    <title>Jelovnik | Roštilj</title>
+    <title>Jelovnik | Panirana jela</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -41,14 +41,14 @@
         <nav id="fn" class="menu-nav food-nav">
             <ul>
                 <li><a href="jelovnik.php">Pizze</a></li>
-                <li><a id="highlightfood" href="rostilj.php">Roštilj</a></li>
-                <li><a href="panirana.php">Panirana jela</a></li>
+                <li><a href="rostilj.php">Roštilj</a></li>
+                <li><a id="highlightfood" href="panirana.php">Panirana jela</a></li>
                 <li><a href="sendvici.php">Sendviči</a></li>
             </ul>
         </nav>
     </section>
     <section class="container-items">
-        <h2 class="section-header">ROŠTILJ</h2>
+        <h2 class="section-header">PANIRANA JELA</h2>
         <div class="shop-items">
             <div class="shop-item column-3" style="display: none;">
                 <span class="shop-item-title">Pizza Capricosa</span>
@@ -146,7 +146,7 @@
                     <button class="btn btn-primary shop-item-button" type="button">DODAJ U NARUDŽBU</button>
                 </div>
             </div>
-            <div class="shop-item column-3">
+            <div class="shop-item column-3" style="display: none;">
                 <span class="shop-item-title">Piletina s roštilja</span>
                 <img class="shop-item-image" src="Images/Piletina.jpg">
                 <div class="shop-item-details">
@@ -154,7 +154,7 @@
                     <button class="btn btn-primary shop-item-button" type="button">DODAJ U NARUDŽBU</button>
                 </div>
             </div>
-            <div class="shop-item column-3">
+            <div class="shop-item column-3" style="display: none;">
                 <span class="shop-item-title">Gurmanska pljeskavica</span>
                 <img class="shop-item-image" src="Images/Gurmanska.jpg">
                 <div class="shop-item-details">
@@ -162,7 +162,7 @@
                     <button class="btn btn-primary shop-item-button"type="button">DODAJ U NARUDŽBU</button>
                 </div>
             </div>
-            <div class="shop-item column-3">
+            <div class="shop-item column-3" style="display: none;">
                 <span class="shop-item-title">Ražnjići</span>
                 <img class="shop-item-image" src="Images/Raznjici.jpg">
                 <div class="shop-item-details">
@@ -170,7 +170,7 @@
                     <button class="btn btn-primary shop-item-button" type="button">DODAJ U NARUDŽBU</button>
                 </div>
             </div>
-            <div class="shop-item column-3">
+            <div class="shop-item column-3" style="display: none;">
                 <span class="shop-item-title">Ćevapi</span>
                 <img class="shop-item-image" src="Images/Cevapi.jpg">
                 <div class="shop-item-details">
@@ -178,7 +178,7 @@
                     <button class="btn btn-primary shop-item-button" type="button">DODAJ U NARUDŽBU</button>
                 </div>
             </div>
-            <div class="shop-item column-3">
+            <div class="shop-item column-3" style="display: none;">
                 <span class="shop-item-title">Pileća krilca</span>
                 <img class="shop-item-image" src="Images/PilecaKrilca.jpg">
                 <div class="shop-item-details">
@@ -186,7 +186,7 @@
                     <button class="btn btn-primary shop-item-button" type="button">DODAJ U NARUDŽBU</button>
                 </div>
             </div>
-            <div class="shop-item column-3">
+            <div class="shop-item column-3" style="display: none;">
                 <span class="shop-item-title">Svinjska Rebarca</span>
                 <img class="shop-item-image" src="Images/SvinjskaRebarca.jpg">
                 <div class="shop-item-details">
@@ -194,7 +194,7 @@
                     <button class="btn btn-primary shop-item-button" type="button">DODAJ U NARUDŽBU</button>
                 </div>
             </div>
-            <div class="shop-item column-3">
+            <div class="shop-item column-3" style="display: none;">
                 <span class="shop-item-title">Rolovana piletina</span>
                 <img class="shop-item-image" src="Images/RolovanaPiletina.jpg">
                 <div class="shop-item-details">
@@ -202,7 +202,7 @@
                     <button class="btn btn-primary shop-item-button" type="button">DODAJ U NARUDŽBU</button>
                 </div>
             </div>
-            <div class="shop-item column-3">
+            <div class="shop-item column-3" style="display: none;">
                 <span class="shop-item-title">Biftek</span>
                 <img class="shop-item-image" src="Images/Biftek.jpg">
                 <div class="shop-item-details">
@@ -210,7 +210,7 @@
                     <button class="btn btn-primary shop-item-button" type="button">DODAJ U NARUDŽBU</button>
                 </div>
             </div>
-            <div class="shop-item column-3">
+            <div class="shop-item column-3" style="display: none;">
                 <span class="shop-item-title">Ražnjići piletina</span>
                 <img class="shop-item-image" src="Images/RaznjiciPiletina.jpg">
                 <div class="shop-item-details">
@@ -218,7 +218,7 @@
                     <button class="btn btn-primary shop-item-button" type="button">DODAJ U NARUDŽBU</button>
                 </div>
             </div>
-            <div class="shop-item column-3">
+            <div class="shop-item column-3" style="display: none;">
                 <span class="shop-item-title">Pljeskavica sa sirom</span>
                 <img class="shop-item-image" src="Images/PljeskavicaSir.jpg">
                 <div class="shop-item-details">
@@ -226,7 +226,7 @@
                     <button class="btn btn-primary shop-item-button" type="button">DODAJ U NARUDŽBU</button>
                 </div>
             </div>
-            <div class="shop-item column-3">
+            <div class="shop-item column-3" style="display: none;">
                 <span class="shop-item-title">Pljeskavica</span>
                 <img class="shop-item-image" src="Images/Pljeskavica.jpg">
                 <div class="shop-item-details">
@@ -234,7 +234,7 @@
                     <button class="btn btn-primary shop-item-button" type="button">DODAJ U NARUDŽBU</button>
                 </div>
             </div>
-            <div class="shop-item column-3">
+            <div class="shop-item column-3" style="display: none;">
                 <span class="shop-item-title">Miješano meso</span>
                 <img class="shop-item-image" src="Images/Mijesano.jpg">
                 <div class="shop-item-details">
@@ -242,7 +242,7 @@
                     <button class="btn btn-primary shop-item-button" type="button">DODAJ U NARUDŽBU</button>
                 </div>
             </div>
-            <div class="shop-item column-3" style="display: none;">
+            <div class="shop-item column-3">
                 <span class="shop-item-title">Bečki odrezak</span>
                 <img class="shop-item-image" src="Images/Becki.jpg">
                 <div class="shop-item-details">
@@ -250,7 +250,7 @@
                     <button class="btn btn-primary shop-item-button" type="button">DODAJ U NARUDŽBU</button>
                 </div>
             </div>
-            <div class="shop-item column-3" style="display: none;">
+            <div class="shop-item column-3">
                 <span class="shop-item-title">Zagrebački odrezak</span>
                 <img class="shop-item-image" src="Images/Zagrebacki.jpg">
                 <div class="shop-item-details">
@@ -258,7 +258,7 @@
                     <button class="btn btn-primary shop-item-button" type="button">DODAJ U NARUDŽBU</button>
                 </div>
             </div>
-            <div class="shop-item column-3" style="display: none;">
+            <div class="shop-item column-3">
                 <span class="shop-item-title">Panirana piletina</span>
                 <img class="shop-item-image" src="Images/PiletinaPanirana.jpg">
                 <div class="shop-item-details">
@@ -266,7 +266,7 @@
                     <button class="btn btn-primary shop-item-button" type="button">DODAJ U NARUDŽBU</button>
                 </div>
             </div>
-            <div class="shop-item column-3" style="display: none;">
+            <div class="shop-item column-3">
                 <span class="shop-item-title">Punjena panirana piletina</span>
                 <img class="shop-item-image" src="Images/PunjenaPiletina.jpg">
                 <div class="shop-item-details">
@@ -274,7 +274,7 @@
                     <button class="btn btn-primary shop-item-button" type="button">DODAJ U NARUDŽBU</button>
                 </div>
             </div>
-            <div class="shop-item column-3" style="display: none;">
+            <div class="shop-item column-3">
                 <span class="shop-item-title">Panirani oslić</span>
                 <img class="shop-item-image" src="Images/PaniraniOslic.jpg">
                 <div class="shop-item-details">
@@ -282,7 +282,7 @@
                     <button class="btn btn-primary shop-item-button" type="button">DODAJ U NARUDŽBU</button>
                 </div>
             </div>
-            <div class="shop-item column-3" style="display: none;">
+            <div class="shop-item column-3">
                 <span class="shop-item-title">Panirani som</span>
                 <img class="shop-item-image" src="Images/PaniraniSom.jpg">
                 <div class="shop-item-details">
