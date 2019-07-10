@@ -22,7 +22,7 @@
                 <li><a id="highlightmenu" href="jelovnik.php">Jelovnik</a></li>
                 <li><a href="narudzba.php">Naruči</a></li>
                 <li><a href="kontakt.php">Kontakt</a></li>
-                <li><a href="">O nama</a></li>
+                <li><a href="onama.php">O nama</a></li>
             </ul>
         </nav>
         <div id="mySidenav" class="sidenav">
@@ -32,7 +32,7 @@
                 <a id="highlightmenu"href="jelovnik.php">Jelovnik</a>
                 <a href="narudzba.php">Naruči</a>
                 <a href="kontakt.php">Kontakt</a>
-                <a href="#">O nama</a>
+                <a href="onama.php">O nama</a>
             </div>
         </div>
         <span id="mnbtn" style="font-size:30px;cursor:pointer;float:right" onclick="openNav()">&#9776;</span>

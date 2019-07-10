@@ -1,3 +1,55 @@
+
+
+.ab1{
+    background-color: rgb(228, 22, 36);
+    display: flex;
+    margin-top: 8%;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-bottom: 7.6%;
+
+}
+
+.imghold{
+    padding: 2%;
+
+
+}
+
+#image1{
+    width: 400px;
+    height: auto;
+}
+
+#parag1{
+    display: block;
+}
+
+#parag1a{
+    display: block;
+    padding-left: 2%;
+}
+
+
+@media screen and (max-width: 800px) {
+    .ab1{
+        display: block;
+    }
+
+    .imghold{
+        text-align: center;
+    }
+
+    #parag1{
+        padding-left: 2%;
+        padding-bottom: 1%
+    }
+}
+
+
+
+
+
 #xbtn{
     display: none;
 }
